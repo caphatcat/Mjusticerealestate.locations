@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+<h2 contenteditable data-heading="locations" class="h1">locations <img src="C:\Users\minea\Desktop\location.PNG"></h2>
+
+<head>
+<style>   
+  
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(192,250,202,1) 43%);
+    }
+    .h1 {	
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: left;
+	line-height: 1;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate();
+	position:unset;
+	color: $red;
+	text-shadow: 
+			-1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple, 
+			1px 0px 0px $green, 0px 1px 0px $green, 2px 1px 0px $green, 1px 2px 0px $green, 3px 2px 0px $green, 2px 3px 0px $green, 4px 3px 0px $green, 3px 4px 0px $green, 5px 4px 0px $green,
+			3px 5px 0px $purple, 6px 5px 0px $purple, 
+			-1px 2px 0 black, 0 3px 0 $purple, 1px 4px 0 $purple, 2px 5px 0px $purple,
+			2px -1px 0 $purple, 3px 0 0 $purple, 4px 1px 0 $purple, 5px 2px 0px $purple, 6px 3px 0 $purple, 7px 4px 0 $purple,
+		10px 10px 4px #dac249;
+	
+	&:after,
+	&:before {
+		content: attr(data-heading);
+		position: absolute;
+		overflow: hidden;
+		left: 0;		
+		width: 100%;
+		top: 0;
+		z-index: 5;
+	}
+	
+	&:before {
+		
+		text-shadow: 
+			-1px -1px 0 $darkred, 1px -1px 0 $darkred, -1px 1px 0 $darkred, 1px 1px 0 $darkred, 
+			1px 0px 0px $orange, 0px 1px 0px $orange, 2px 1px 0px $orange, 1px 2px 0px $orange, 3px 2px 0px $orange, 2px 3px 0px $orange, 4px 3px 0px $orange, 3px 4px 0px $orange, 5px 4px 0px $orange,
+			3px 5px 0px $darkred, 6px 5px 0px $darkred, 
+			-1px 2px 0 black, 0 3px 0 $darkred, 1px 4px 0 $darkred, 2px 5px 0px $darkred,
+			2px -1px 0 $darkred, 3px 0 0 $darkblue, 4px 1px 0 $darkred, 5px 2px 0px $darkred, 6px 3px 0 $darkred, 7px 4px 0 $darkred,
+			10px 10px 4px rgba(#6af177, .8);
+		color: $green;
+		height: 66%;
+	}
+	
+	&:after {
+		height: 33%;
+		color: $blue;
+		text-shadow: 
+			-1px -1px 0 $darkblue, 1px -1px 0 $darkblue, -1px 1px 0 $darkblue, 1px 1px 0 $darkblue, 
+			1px 0px 0px $red, 0px 1px 0px $red, 2px 1px 0px $red, 1px 2px 0px $red, 3px 2px 0px $red, 2px 3px 0px $red, 4px 3px 0px $red, 3px 4px 0px $red, 5px 4px 0px $red,
+			3px 5px 0px $darkblue, 6px 5px 0px $darkblue, 
+			-1px 2px 0 black, 0 3px 0 $darkblue, 1px 4px 0 $darkblue, 2px 5px 0px $darkblue,
+			2px -1px 0 $darkblue, 3px 0 0 $darkblue, 4px 1px 0 $darkblue, 5px 2px 0px $darkblue, 6px 3px 0 $darkblue, 7px 4px 0 $darkblue;
+	}
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+	font-family: 'CoreCircus2DDot1';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');}
+</style>
+</head>
+<body> 
+<p style="color:black; font-family:cursive; font-size:1.5em;">our main service headquraters is located in bole bulbula, addis ababa, Ethiopia.<br> We also have international locations such as dallas, Texas, America;<br> we are also loacted in jida, saudiarabia......etc</p>
+
+<table style="border-style: solid;border-width: 1px;">
+    <style>
+table, th, td{
+    border:1px solid black;
+}
+
+    </style>
+    <tr>
+        <colgroup>
+     <col/>
+     <col style="background-color:burlywood" span="3"/>
+     </colgroup>
+     <td style="background-color:aquamarine">bole bulbula</td>
+      <td>Texas, dallas</td>
+      <td>Jida</td>
+      <td>Tokyo</td>
+      <td style="background-color:aquamarine">Rio</td>
+    </tr>
+    <tr>
+      <td style="background-color:aquamarine">Ethiopia</td>
+      <td>United States of America</td>
+      <td>saudiarabia</td>
+      <td>Japan</td>
+      <td style="background-color:aquamarine">Brazil</td>
+    </tr>
+  </table>
+  <p style="color:black; font-family:cursive; font-size:1.5em;"> for further info on our locations please click the picture below:</p>
+  <a title="location:Google maps" style=" margin-bottom: 1.5em" href="https://www.google.com/maps/place/Auxilium+Catholic+School,+Bole-Bulbula,+Addis+ababa/@8.9466729,38.7821256,17z/data=!3m1!4b1!4m6!3m5!1s0x164b83e7f7e0b293:0x8fa2e697bacc7b9c!8m2!3d8.9466676!4d38.7843143!16s%2Fg%2F11h4t6lv32"><img style="border-style:solid; border-color: black;border-radius: 10%;" src="C:\Users\minea\Desktop\school.PNG"alt="profile"></span></a>
+</body>
+
+<div style="background-color: midnightblue;">
+    <footer>
+    <p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">Find out more about us: </p>
+    <p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Youtubue:<a title="Youtubue" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://Youtubue.com">MJrealestate@Youtubue.com</span></a> </p>
+    <p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Telegram:<a title="Telegram" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://telegram.com">251@MJrealestate</span></a> </p>
+    <p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Instergram:<a title="Instergram" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://instergram.com">MJ realestate@instergram.com</span></a> </p>
+    
+    <p style="color:rgb(187, 255, 0); font-family: 'Times New Roman', Times, serif;">for any further information contact us at: +251931714256</p>
+    </div>
+    </footer>
